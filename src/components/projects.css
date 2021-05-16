@@ -1,0 +1,67 @@
+.project-home {
+  width: 80%;
+  /* margin-top: 100px; */
+}
+.project-box {
+  border: 2px solid #e1e4e8;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+hr {
+  background-color: #e1e4e8;
+}
+.project-menusearch {
+  display: flex;
+  justify-content: space-around;
+}
+.search-project input {
+  border-radius: 5px;
+  height: 30px;
+  /* background-color: #161b22; */
+  width: 500px;
+}
+.New-repo {
+  margin-left: auto;
+}
+.project-menu {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: #f6f8fa;
+}
+h4 {
+  color: #24292e;
+}
+h4:hover {
+  color: #0366d6;
+}
+.open-projects {
+  display: flex;
+  align-items: center;
+}
+.sort-projects {
+  margin-left: auto;
+}
+.closed-projects {
+  margin-left: 10px;
+}
+.projects-list {
+  display: flex;
+}
+.left-part {
+  margin-left: 10px;
+}
+.discription {
+  display: flex;
+  align-items: center;
+  margin-left: 20%;
+}
+.options {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.project-name a {
+  font-size: 12px !important;
+  color: #6a737d;
+}

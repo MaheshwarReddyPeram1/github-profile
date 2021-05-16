@@ -1,0 +1,25 @@
+.body {
+  font-family: "Segoe UI Local" !important;
+}
+.home {
+  display: flex;
+  background-color: #fff;
+  /* flex-wrap: wrap; */
+}
+.home-left {
+  width: 30%;
+  z-index: 3;
+  flex-wrap: wrap;
+}
+.home-right {
+  width: 70%;
+  position: relative;
+  /* flex-wrap: wrap; */
+}
+.line-tabs {
+  position: absolute;
+  margin-top: 4.5%;
+  /* height: 10px; */
+  width: 100%;
+  /* z-index: -1; */
+}

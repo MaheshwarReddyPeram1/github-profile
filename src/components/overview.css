@@ -1,0 +1,88 @@
+.home-repos {
+  width: 80%;
+  /* margin-top: 100px; */
+  margin-left: 20px;
+}
+.tags {
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+.customize {
+  display: flex;
+  margin-left: auto;
+  color: #6a737d;
+}
+.popular {
+  color: #6a737d;
+}
+.repos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  margin-top: 20px;
+  width: 400px;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.card-content {
+  margin-left: 15px;
+}
+.project-language {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  /* justify-content: space-between; */
+}
+.projectname h5 {
+  color: #0366d6;
+}
+.project-tag {
+  color: #6a737d;
+}
+.project-language {
+  color: #6a737d;
+  display: flex;
+  align-items: center;
+}
+.circle-colorlang {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  margin-right: 3px;
+  display: flex;
+  /* flex: 1; */
+}
+.lan-name {
+  flex: 1;
+  margin-top: 15px;
+}
+.stars {
+  flex: 2;
+}
+.forks {
+  flex: 3;
+}
+.heatmap {
+  height: 200px;
+  width: 80%;
+}
+.react-calendar-heatmap .color-scale-1 {
+  fill: #d6e685;
+}
+.react-calendar-heatmap .color-scale-2 {
+  fill: #8cc665;
+}
+.react-calendar-heatmap .color-scale-3 {
+  fill: #44a340;
+}
+.react-calendar-heatmap .color-scale-4 {
+  fill: #1e6823;
+}
+.total-con {
+  margin-top: 25px;
+}

@@ -1,0 +1,99 @@
+.container-header {
+  display: flex;
+  background-color: #24292e;
+  align-items: center;
+  height: 60px;
+}
+.search {
+  margin-left: 15px;
+  padding-left: 10px;
+}
+.search input {
+  border-radius: 5px;
+  height: 30px;
+  background-color: #24292e;
+  width: 200px;
+}
+h6 {
+  color: white;
+}
+.Pull-request {
+  margin-left: 15px;
+  /* text-decoration: none; */
+  font-size: 22px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
+.hover-color:hover {
+  color: gray;
+  text-decoration: initial;
+  list-style-type: none;
+}
+.Pull-request hover-color {
+  text-decoration: none !important;
+}
+.issues {
+  margin-left: 15px;
+  /* font-weight: 600; */
+  font-size: 22px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
+.Marketplace {
+  margin-left: 15px;
+  font-size: 22px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
+.Explore {
+  margin-left: 15px;
+  font-size: 22px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
+.right-menu {
+  display: flex;
+  margin-left: 700px;
+  /* align-items: flex-end; */
+  /* background-color: white; */
+}
+.drop-down {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  right: 0;
+  border-radius: 10px;
+}
+.dropdown-content::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 28px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+.dropdown-content p {
+  text-decoration: none;
+}
+.drop-down:hover .dropdown-content {
+  display: block;
+}
+.logo {
+  border-radius: 100%;
+  align-items: center;
+  margin-left: 25px;
+}
+.logo img {
+  height: 40px;
+}
+#drop {
+  padding-right: 15px;
+}

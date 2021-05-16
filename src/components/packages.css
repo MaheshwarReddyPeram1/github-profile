@@ -1,0 +1,35 @@
+.cards {
+  border: 3px solid #e1e4e8;
+  width: 300px;
+  border-radius: 10px;
+  padding: 15px;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.card-title {
+  display: flex;
+}
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.get-start {
+  display: flex;
+  justify-content: center;
+}
+.statement {
+  display: flex;
+  justify-content: center;
+}
+.registry {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+

@@ -1,0 +1,71 @@
+.profile-container {
+  width: 100%;
+  margin-top: 75px;
+  /* display: flex; */
+  position: relative;
+}
+
+.profile-pic img {
+  width: 250px;
+  margin-left: 120px;
+  margin-top: -40px;
+  border-radius: 50%;
+  height: 250px;
+}
+.user-name {
+  margin-left: 100px;
+}
+.user-name h5 {
+  margin-top: -20px;
+}
+.user-name p {
+  /* height: 40px; */
+  color: #6a737d;
+}
+.user-follow {
+  display: flex;
+  position: relative;
+  margin-left: 100px;
+  height: 30px;
+}
+.follow-button button {
+  width: 100px;
+  margin-right: 5px;
+}
+.three-dots {
+  margin-left: 20px;
+}
+.user-connections {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 100px;
+}
+.user-details {
+  margin-left: 100px;
+  margin-top: 15px;
+}
+.user-highlights {
+  margin-left: 100px;
+}
+.user-organization {
+  margin-left: 100px;
+}
+.user-Sponsors {
+  margin-left: 100px;
+}
+.typebutton {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.blog {
+  display: flex;
+  align-items: center;
+}
+.avt img {
+  height: 20px;
+}
+a:hover {
+  text-decoration: none !important;
+}

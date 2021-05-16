@@ -1,0 +1,71 @@
+.repositories-home {
+  width: 80%;
+  margin-left: 20px;
+}
+.repositories-card {
+  display: flex;
+}
+.seach-menu {
+  display: flex;
+  justify-content: space-around;
+}
+.seach-menu input {
+  border-radius: 5px;
+  height: 30px;
+  width: 500px;
+  margin-left: 20px;
+}
+.select-1 {
+  margin-left: 20px;
+  margin-right: 10px;
+  height: 20px;
+}
+.select-2 {
+  margin-right: 10px;
+}
+.select-3 {
+  margin-right: 20px;
+}
+.typebutton {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #fafbfc;
+  color: #161b22;
+}
+.typebutton1 {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.repo-items {
+  display: flex;
+  /* margin-right: 10px; */
+}
+.repo-updatedtime {
+  margin-left: 10px;
+  font-size: 12px !important;
+}
+.repo-language {
+  font-size: 12px !important;
+  display: flex;
+  /* align-items: center; */
+}
+.circle-color {
+  border: 1px solid peru;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  background-color: peru;
+  margin-right: 3px;
+}
+hr {
+  background-color: #161b22;
+}
+.repo-cardright {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: center;
+  align-content: flex-end;
+  margin-left: auto;
+}
