@@ -9,9 +9,11 @@ import CalendarHeatmap from 'react-calendar-heatmap';
 import 'react-calendar-heatmap/dist/styles.css';
 import getContributions from "../components/help"
 import { useParams } from "react-router";
-
+import Chart from 'react-apexcharts'
 export default function Overview() {
     const [contributions, setcontributions] = useState([])
+    const [contribdata, setcontribData] = useState([])
+
     const colors = {
         Python:"#3572a5",
         JavaScript : "#f1e05a",
@@ -24,9 +26,10 @@ export default function Overview() {
     const { userName } = useParams();
 
     const amm = async ()=>{
-        const data = await getContributions('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', userName)
+        const data = await getContributions('ghp_Z4sSdv48UrTJaxaSqYMG5Vw2aGhXD44Aaf', userName)
         console.log("helloperam",data)
         setcontributions(data.data.user.contributionsCollection.contributionCalendar.totalContributions)
+        
     }
     var repositories = useContext(reposlist)
     repositories.sort((item,item1)=>{
@@ -47,6 +50,71 @@ export default function Overview() {
                 
             })
     }
+    var options = {
+        series: [{
+        name: 'mon',
+        data: [["jan",2],["Feb",2],["mar",3],["apr",2],["may",5],["june",2],["jul",8],["aug",2],["sep",0],["oct",5],["nov",2],["dec",10]]
+      },
+      {
+        name: '',
+        data: [["jan",2],["Feb",2],["mar",3],["apr",2],["may",5],["june",2],["jul",8],["aug",2],["sep",2],["oct",5],["nov",2],["dec",10]]
+        
+      },
+      {
+        name: 'web',
+        data: [["jan",2],["Feb",2],["mar",3],["apr",2],["may",5],["june",2],["jul",8],["aug",2],["sep",0],["oct",5],["nov",2],["dec",10]]
+      },
+      {
+        name: '',
+        data: [["jan",2],["Feb",2],["mar",3],["apr",2],["may",5],["june",2],["jul",8],["aug",2],["sep",5],["oct",5],["nov",2],["dec",10]]
+      },
+      {
+        name: 'fri',
+        data: [["jan",2],["Feb",2],["mar",3],["apr",2],["may",5],["june",2],["jul",8],["aug",2],["sep",0],["oct",5],["nov",2],["dec",10]]
+      },
+      {
+        name: '',
+        data: [["jan",2],["Feb",2],["mar",3],["apr",2],["may",5],["june",2],["jul",8],["aug",2],["sep",0],["oct",5],["nov",2],["dec",10]]
+      },
+      {
+        name: 'sun',
+        data: [["jan",2],["Feb",2],["mar",3],["apr",2],["may",5],["june",2],["jul",8],["aug",2],["sep",0],["oct",5],["nov",2],["dec",10]]
+      },
+      
+      ],
+        chart: {
+        height: 100,
+        type: 'heatmap',
+      },
+      dataLabels: {
+        enabled: false
+      },
+      colors: ["#28a745"],
+      title: {
+        text: 'Dummydata becuase github throughing error'
+      },
+      };
+
+//    var state = {
+//     options: {
+//       chart: {
+//         id: "basic-bar"
+//       },
+//       xaxis: {
+//         categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+//       }
+//     },
+//     series: [
+//       {
+//         name: "series-1",
+//         data: [30, 40, 45, 50, 49, 60, 70, 91]
+//       }
+//     ]
+//   };
+    
+
+    //   var chart = new ApexCharts(document.querySelector("#myDiv"), options);
+    //   chart.render();
 
 
     return (
@@ -94,7 +162,16 @@ export default function Overview() {
                     <img src={`https://ghchart.rshah.org/${userName}`} alt={`${userName} Github chart`} />
 
 
-                    <div id="myDiv"></div>
+                    <div className="myDiv" style={{marginTop :"100px"}}>
+                    <Chart
+                        options={options}
+                        series={options.series}
+                        type="heatmap"
+                        width="500"
+                        height= "200"
+                        color = "#28a745"
+                    />
+                    </div>
 
                 </div>
 
