@@ -47,13 +47,13 @@ export default function Tabs(){
             <div className ="top-tabs">
             <Link to={`/user/${userName}`}>
                 <div className = "overview" id ="tab1">
-                    <ImportContactsOutlinedIcon /><a onClick={()=>{handle("Overview","tab1")}} style ={{textDecoration :"none"}}> Overview</a>
+                    <ImportContactsOutlinedIcon id = "tab-icon"/><a onClick={()=>{handle("Overview","tab1")}} style ={{textDecoration :"none"}}> Overview</a>
                 </div>
                 </Link>
                 <Link to={`/user/${userName}`}>
                 <div className = "overview" id ="tab2">
                     <div >
-                    <PhotoAlbumOutlinedIcon style ={{height :"20px"}}/>
+                    <PhotoAlbumOutlinedIcon style ={{height :"20px"}} id = "tab-icon"/>
 
                     </div>
                     <div style ={{marginTop:"-7px"}}>
@@ -61,13 +61,13 @@ export default function Tabs(){
                     </div>
                     
                     <div style={{border:"3px solid rgb(209 213 218 / 50%)",borderRadius :"50%",height:"20px" ,color:"black",backgroundColor:"rgb(209 213 218 / 50%)",marginTop:"-10px"}}>
-                    {repositories.length}
+                    <p style ={{marginTop:"-3px"}}>{repositories.length}</p>
                     </div>
                 </div>
                 </Link>
             <Link to={`/user/${userName}`}>
                 <div className = "overview" id ="tab3">
-                    <AssessmentOutlinedIcon /><a onClick={()=>{handle("Projects","tab3")}}>projects</a>
+                    <AssessmentOutlinedIcon id = "tab-icon"/><a onClick={()=>{handle("Projects","tab3")}}>projects</a>
                 </div>
                 </Link>
             <Link to={`/user/${userName}`}>
@@ -76,7 +76,7 @@ export default function Tabs(){
                 </div>
                 </Link>
             </div>
-            {/* <hr className ="tab-line"/> */}
+            <hr className ="tab-line"/>
            <div className = "content">
                <reposlist.Provider value = {repositories}>
                {repo == "Overview"? <Overview />:repo == "Repositories"?<Repositories />:repo == "Projects"?<Projects />:<Packages/>}

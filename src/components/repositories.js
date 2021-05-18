@@ -27,15 +27,14 @@ export default function Repositories() {
     }
     return (
         <div className = "repositories-home">
-             {/* {console.log("search",search)} */}
-            {console.log("searchitem",repolist)} 
             <div className = "seach-menu">
                 <div className = "search-input">
                     <input type = "search" placeholder = "find a repository..." autocomplete="off" onChange={handleChange} value={search}></input>
                 </div>
+                <div className = "div-selectors">
                 <div className = "select-1">
                 <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle typebutton" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="btn btn dropdown-toggle typebutton" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Type
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -47,7 +46,7 @@ export default function Repositories() {
                 </div>
                 <div className = "select-2">
                 <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle typebutton" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="btn btn dropdown-toggle typebutton" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Language
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -59,7 +58,7 @@ export default function Repositories() {
                 </div>
                 <div className = "select-3">
                 <div class="dropdown show">
-                    <a class="btn btn-outline-secondary dropdown-toggle typebutton" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="btn btn dropdown-toggle typebutton" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Sort
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -71,6 +70,7 @@ export default function Repositories() {
                 </div>
                 <div className = "New-repo">
                 <button type="button" class="btn btn-success typebutton1"> <PostAddOutlinedIcon /> New</button>
+                </div>
                 </div>
             </div>
             <div className = "repositories-list">
@@ -87,7 +87,6 @@ export default function Repositories() {
                             <div className = "repo-items">
                                 <div className = "repo-language">
                                     <div className = "circle-color" style ={{border: `1px solid ${colors[items.language]?colors[items.language]:"peru"}`,backgroundColor :`${colors[items.language]?colors[items.language]:"peru"}` }}>
-    
                                     </div>
                                     <div className = "circle-color1">
                                     <p>{items.language}</p>
