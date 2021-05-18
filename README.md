@@ -31,17 +31,17 @@ user data is taken from github server
 2. you can view 4 tabs in desktop mode.
 
 ## overview tab 
-1.taken user data repositories from github server.
-2.sorted based on given stars of repositories.
-3.displayed top 6 repos based on sorting.
+1.taken user data repositories from github server.\
+2.sorted based on given stars of repositories.\
+3.displayed top 6 repos based on sorting.\
 ## Repository tab
-1.taken user data repositories from github server.
-2.in search you can search based on repo name.
+1.taken user data repositories from github server.\
+2.in search you can search based on repo name.\
 ## Projects tab
-1.taken user data repositories from github server.
-2.in search you can search based on repo name.
+1.taken user data repositories from github server.\
+2.in search you can search based on repo name.\
 
-note:-im unable to find project url so i have used repos url.
+note:-im unable to find project url so i have used repos url.\
 
 github repo link :- https://github.com/MaheshwarReddyPeram1/github-profile
 ## Demo Link
