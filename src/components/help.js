@@ -1,5 +1,7 @@
 
 export default async function getContributions(token, username) {
+  console.log(username);
+
     const headers = {
         'Authorization': `bearer ${token}`,
     }
@@ -11,7 +13,6 @@ export default async function getContributions(token, username) {
                 contributionCalendar {
                   colors
                   totalContributions
-                  
                 }
               }
             }
@@ -19,6 +20,7 @@ export default async function getContributions(token, username) {
     }
     const response = await fetch('https://api.github.com/graphql', { method: 'POST', body: JSON.stringify(body), headers: headers })
     const data = await response.json()
+    console.log(data);
     return data
 }
 

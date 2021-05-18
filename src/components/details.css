@@ -1,19 +1,23 @@
-.profile-container {
-  width: 100%;
-  margin-top: 75px;
-  /* display: flex; */
-  position: relative;
+@media (min-width: 1000px) {
+  .profile-container {
+    width: 100%;
+    margin-top: 75px;
+    position: relative;
+  }
 }
 
 .profile-pic img {
-  width: 250px;
-  margin-left: 120px;
+  display: flex;
+  width: 60%;
+  margin: 15px;
+  margin-left: auto;
+  flex: 0 1;
   margin-top: -40px;
   border-radius: 50%;
-  height: 250px;
 }
-.user-name {
-  margin-left: 100px;
+.user-name1 {
+  margin-left: 30%;
+  overflow-wrap: anywhere;
 }
 .user-name h5 {
   margin-top: -20px;
@@ -25,7 +29,9 @@
 .user-follow {
   display: flex;
   position: relative;
-  margin-left: 100px;
+  display: flex;
+  margin-left: 30%;
+  /* margin-left: 100px; */
   height: 30px;
 }
 .follow-button button {
@@ -33,26 +39,28 @@
   margin-right: 5px;
 }
 .three-dots {
+  flex-wrap: wrap;
   margin-left: 20px;
 }
 .user-connections {
   display: flex;
   align-items: center;
   margin-top: 15px;
-  margin-left: 100px;
+  display: flex;
+  margin-left: 30%;
 }
 .user-details {
-  margin-left: 100px;
+  margin-left: 30%;
   margin-top: 15px;
 }
 .user-highlights {
-  margin-left: 100px;
+  margin-left: 30%;
 }
 .user-organization {
-  margin-left: 100px;
+  margin-left: 30%;
 }
 .user-Sponsors {
-  margin-left: 100px;
+  margin-left: 30%;
 }
 .typebutton {
   height: 30px;
@@ -68,4 +76,102 @@
 }
 a:hover {
   text-decoration: none !important;
+}
+@media (max-width: 770px) {
+  .profile-pic img {
+    width: 100px;
+    /* margin-left: 20px; */
+    border-radius: 50%;
+    height: 100px;
+  }
+  .name-part {
+    display: flex;
+    align-items: center;
+  }
+  .user-name {
+    /* margin-left: -90px; */
+    margin-top: 20px;
+    width: 100%;
+    /* margin-left: -10%; */
+  }
+  .user-follow {
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    height: 30px;
+    margin-top: 20px;
+  }
+
+  .user-connections {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .user-details {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .user-highlights {
+    margin-left: 20px;
+  }
+  .user-organization {
+    margin-left: 20px;
+  }
+  .user-Sponsors {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .user-follow {
+    display: none;
+  }
+  .profile-container {
+    width: 100%;
+    /* margin-top: 75px; */
+    position: relative;
+  }
+}
+@media (max-width: 770px) {
+  .user-follow {
+    display: block;
+    display: flex;
+    position: relative;
+    display: in;
+    width: 200px;
+    height: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .user-connections {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    display: flex;
+    margin-left: 5%;
+  }
+  .user-details {
+    margin-left: 5%;
+    margin-top: 15px;
+  }
+  .user-highlights {
+    margin-left: 5%;
+  }
+  .user-organization {
+    margin-left: 5%;
+  }
+  .user-Sponsors {
+    margin-left: 5%;
+  }
+  .profile-pic img {
+    display: flex;
+    /* width: 60%; */
+    margin: 15px;
+    margin-left: 5%;
+  }
+  .user-name1 {
+    margin-left: 100px;
+    margin-left: 5%;
+    overflow-wrap: anywhere;
+  }
 }

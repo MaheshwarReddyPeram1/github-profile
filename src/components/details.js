@@ -35,24 +35,24 @@ export default function Details() {
     }, [])
     return (
         <div className = "profile-container">
-            {/* <hr style={{marginTop :"5px"}}/> */}
-            {console.log("mahi",user.avatar_url)}
+            <div className ="name-part">
             <div className="profile-pic">
                 <img src={user.avatar_url}></img>
             </div>
             <div className="user-name">
-                <div>
+                <div class="user-name1">
                 <h2>{user.name}</h2>
-
                 </div>
-                <div>
+                <div class="user-name1">
                 <p>{user.login}</p>
-
                 </div>
-                <div>
+                
+            </div>
+            
+            </div>
+            <div class="user-name1">
                 <p>{user.bio}</p>
                 </div>
-            </div>
             <div className = "user-follow">
                 <div className = "follow-button">
                 <button type="button" class="btn btn-outline-secondary typebutton">follow</button>
@@ -95,7 +95,7 @@ export default function Details() {
             <div className = "user-organization">
                 <h5>Organizations</h5>
                 {org?org.map((item)=>(
-                    <div>
+                    <div style = {{display :"flex"}}>
                         <div className = "avt">
                             <img src= {item.avatar_url}></img>
                         </div>

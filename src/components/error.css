@@ -1,0 +1,8 @@
+.hello {
+  margin-left: 500px;
+  display: flex;
+  justify-content: center;
+}
+.container-fluid {
+  display: flex;
+}
