@@ -18,11 +18,35 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+## User data & repositories
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+user data is taken from github server
 
+### Working
+
+1.can able fetch data using user name of git hub
+
+  ex link:- https://githubprofile-user.web.app/user/{username}
+  
+2. you can view 4 tabs in desktop mode.
+
+## overview tab 
+1.taken user data repositories from github server.
+2.sorted based on given stars of repositories.
+3.displayed top 6 repos based on sorting.
+## Repository tab
+1.taken user data repositories from github server.
+2.in search you can search based on repo name.
+## Projects tab
+1.taken user data repositories from github server.
+2.in search you can search based on repo name.
+
+note:-im unable to find project url so i have used repos url.
+
+github repo link :- https://github.com/MaheshwarReddyPeram1/github-profile
+## Demo Link
+
+(https://githubprofile-user.web.app/user/erossignon)
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
